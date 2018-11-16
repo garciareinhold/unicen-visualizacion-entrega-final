@@ -1,0 +1,166 @@
+body{background:#f9f9f9;}
+
+/* ////////////////////NAVBAR//////////////////// */
+
+#wrapper{padding:90px 15px;}
+.navbar-expand-lg .navbar-nav.side-nav{flex-direction: column;}
+.card{margin-bottom: 15px; border-radius:0; box-shadow: 0 3px 5px rgba(0,0,0,.1); }
+.header-top{box-shadow: 0 3px 5px rgba(0,0,0,.1)}
+.leftmenutrigger{display: none}
+@media(min-width:500px) {
+.leftmenutrigger{display: block;display: block;margin: 7px 20px 4px 0;cursor: pointer;}
+#wrapper{padding: 90px 15px 15px 15px; }
+.navbar-nav.side-nav.open {left:0;}
+.navbar-nav.side-nav{background: #585f66;box-shadow: 2px 1px 2px rgba(0,0,0,.1);position:fixed;top:56px;flex-direction: column!important;left:-220px;width:200px;overflow-y:auto;bottom:0;overflow-x:hidden;padding-bottom:40px}
+}
+.animate{-webkit-transition:all .3s ease-in-out;-moz-transition:all .3s ease-in-out;-o-transition:all .3s ease-in-out;-ms-transition:all .3s ease-in-out;transition:all .3s ease-in-out}
+
+.abs-center-x {
+    position: absolute;
+    left: 47%;
+    transform: translateX(-50%);
+}
+
+#game-navbar{
+  background-color: #3b567e;
+}
+
+#game-brand{
+  font-family: 'Luckiest Guy', cursive;
+  color:#cad0d8;
+  font-size: 27px;
+  padding: 0px;
+}
+
+.btn-secondary{
+  color:#1f3a62 !important;
+  background-color: #cad0d8 !important;
+  border-color: #cad0d8 !important;
+}
+
+.btn-secondary:hover {
+    color:rgb(237, 239, 242) !important;
+    background-color: #5a6268 !important;
+    border-color: #545b62 !important;
+}
+
+#vertical-nav{
+  background-color: #cad0d8;
+}
+
+.nav-link{
+  color:#1f3a62 !important;
+}
+
+hr.style1{
+	border-top: 1px solid black;
+  width: 100%;
+}
+
+#search-input{
+  width: 500px;
+}
+
+.advanced-search{
+padding: 6px;
+}
+
+.popover{
+  left: 0px !important;
+  right: 0px !important;
+    width: 100%;
+    max-width: none !important; /* Max Width of the popover (depending on the container!) */
+}
+
+.hide{
+  display: none ;
+}
+
+#ex1Slider .slider-selection {
+	background: #BABABA;
+}
+/* ////////////////////GAMES//////////////////// */
+
+.Portfolio {
+    position: relative;
+    margin: 5px;
+    width: 140px;
+    box-shadow:0 3px 5px -1px rgba(0,0,0,.2),0 5px 8px 0 rgba(0,0,0,.14),0 1px 14px 0 rgba(0,0,0,.12)
+}
+
+.Portfolio:hover {
+    animation: winanim .8s;
+    animation-fill-mode: forwards;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+}
+
+.Portfolio img {
+    width: 100%;
+    height: auto;
+}
+
+.desc {
+    padding: 5px;
+    text-align: center;
+    font-size: 90%;
+    background:#8ea0ba;
+    /* border-radius: 5px; */
+    color: #1f3a62;
+
+}
+
+@keyframes winanim {
+    100%{transform:scale(1.1,1.1)}
+}
+
+
+
+/* ////////////////////GAME-PAGE//////////////////// */
+
+.game-title{
+  margin-left: 15%;
+/* text-align: center; */
+margin-bottom: 30px;
+}
+
+.row-game-data{
+  margin-top: 580px !important;
+  display: inherit !important;
+  margin-bottom: 50px !important;
+}
+
+#accordion{
+  text-align: center !important;
+}
+
+.accordion-button{
+  width: 100%;
+  height: 50px;
+  background-color: #3b567e;
+  border: 1px solid black;
+}
+
+#comments-panel{
+  text-align: left !important;
+}
+
+.panel-default{
+  margin: auto;
+  margin-bottom: 10px !important;
+  width: 50% !important;
+}
+
+.panel-collapse{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #cad0d8;
+}
+
+.media{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/*
+.img-photo{
+  width: 20% !important;
+} */

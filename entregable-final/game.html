@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/solid.css" integrity="sha384-rdyFrfAIC05c5ph7BKz3l5NG5yEottvO/DQ0dCrwD8gzeQDjYBHNr1ucUpQuljos" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.2.3/css/bootstrap-slider.min.css" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/mainGame.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <title></title>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <div id="wrapper" class="animate">
+    <nav id="game-navbar" class="navbar header-top fixed-top navbar-expand-lg  navbar-dark ">
+      <span class="navbar-toggler-icon leftmenutrigger"></span>
+      <a id="game-brand" class="navbar-brand" href="#">GAMES.con</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <ul class="navbar-nav abs-center-x">
+        <li id="search-input" class="nav-item">
+          <form class="ml-2 my-auto d-inline">
+            <div class="input-group">
+              <input type="text" class="form-control border-right-0" placeholder="Search games">
+              <div class="input-group-append">
+                <button class="btn btn-outline-primary border-left-0" type="button"><i class="fas fa-search"></i></button>
+                <a rel="popover" data-placement="bottom" data-popover-content="#myPopover" class="advanced-search" href="#">Advanced</a>
+              </div>
+            </div>
+          </form>
+        </li>
+      </ul>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul id="vertical-nav" class="navbar-nav animate side-nav">
+          <li class="nav-item vertical-item">
+            <a class="nav-link" href="#">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <hr class="style1">
+          <li class="nav-item vertical-item">
+            <a class="nav-link" href="#">20 Last Published</a>
+          </li>
+          <li class="nav-item vertical-item">
+            <a class="nav-link" href="#">Top 20 Best Games</a>
+          </li>
+          <hr class="style1">
+          <li class="nav-item vertical-item">
+            <a class="nav-link" href="#">Help</a>
+          </li>
+          <hr class="style1">
+        </ul>
+        <ul class="navbar-nav ml-md-auto d-md-flex">
+          <li class="nav-item">
+            <button type="button" class="btn btn-secondary mr-2">Login</button>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="btn btn-secondary">Create account</button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+
+
+  <!-- FILTERS -->
+
+  <div id="myPopover" class="hide">
+    <div class="container-filters">
+      This is a popover list:
+      <ul>
+        <li>List item 1</li>
+        <li>List item 2</li>
+        <li>List item 3</li>
+      </ul>
+    </div>
+    <div class="">
+      <input id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14" />
+    </div>
+  </div>
+
+
+  <div class="container-fluid">
+    <h2 class="game-title">Memories 1942</h2>
+
+    <!-- GAMEPAGE -->
+    <div class="row">
+      <div class="col game-container">
+        <!-- aca va el div del juego  -->
+        <div class="game-background">
+          <div class="sky-background">
+            <div id="plane" class="plane"></div>
+            <div id="enemy1" class="enemy enemy1"></div>
+            <div id="enemy2" class="enemy enemy3"></div>
+            <div id="enemy3" class="enemy enemy2"></div>
+            <div id="enemy4" class="enemy enemy2"></div>
+            <div id="enemy5" class="enemy enemy1"></div>
+            <div id="enemy6" class="enemy enemy2"></div>
+            <div id="enemy7" class="enemy enemy3"></div>
+            <div id="enemy8" class="enemy enemy1"></div>
+            <div id="enemy9" class="enemy enemy1"></div>
+            <div id="enemy10" class="enemy enemy2"></div>
+            <div id="life"></div>
+          </div>
+          <div class="plane-data">
+            <p>SCORE</p>
+            <span id="score">0 </span>
+            <div id="lives-container">
+
+            </div>
+          </div>
+          <div id="modalFinish" class="modal">
+            <div class="modal-content">
+              <h1>YOU HAVE LOST!</h1>
+              <p><input id="finalScore" type="text" readonly name="" value="0"></p>
+              <p id="name">Name<input id="namePlayer" type="text" name="" value=""></p>
+              <button id="submit-score" type="button" name="button">Send</button>
+            </div>
+          </div>
+        </div>
+        <div class="start-menu">
+          <img src="assets/game-images/game-wallpaper.jpg" alt="">
+          <ul class="lists">
+            <li><a class="menu-item" data-id="play" href="">PLAY</a></li>
+            <li><a class="menu-item" data-id="options" href="">OPTIONS</a></li>
+            <li><a class="menu-item" data-id="hi-score" href="">HI-SCORE</a></li>
+          </ul>
+        </div>
+        <div class="options">
+          <img src="assets/game-images/game-wallpaper.jpg" alt="">
+          <div class="options-menu">
+            <ul class="lists">
+              <li><a class="options-item " data-id="difficulty" href="">DIFFICULTY: </a><input id="difficulty" readonly type="" name="" value="NORMAL"></li>
+              <li><a class="options-item" data-id="music" href="">MUSIC: </a><input id="music" readonly type="" name="" value="ON"></li>
+              <li><a class="options-item" data-id="sound-effect" href="">SFX: </a><input id="sound-effect" readonly type="" name="" value="ON"></li>
+              <li><a class="options-item" data-id="back" href="">BACK</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="hi-score">
+          <h1>HIGH SCORES</h1>
+          <div class="table-score">
+            <table id="score-data">
+              <thead>
+                <th>NAME</th>
+                <th>POINTS</th>
+              </thead>
+            </table>
+          </div>
+          <p><a class="back-hiscore menu-item" data-id="back" href="">BACK</a></p>
+        </div>
+        <div class="controls">
+          <h2>Rules</h2>
+          <p>Pick up hearts every 15 sec</p>
+          <p>Resist as much as you can</p>
+          <p>Submit your score</p>
+          <h2>Controls</h2>
+          <img src="assets/game-images/controls.png" alt="">
+        </div>
+      </div>
+    </div>
+
+
+    <!--CONTROLS-HI_SCORES-COMMENTS -->
+    <div class="row row-game-data">
+      <div class="game-data-buttons">
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+          <!-- CONTROLS -->
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingOne">
+              <!-- <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Collapsible Group Item #1
+                </a>
+              </h4> -->
+              <button class="accordion-button" type="button" name="button" data-toggle="collapse" data-target="#collapseOne">CONTROLS</button>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+              <div class="panel-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+                occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+
+          <!-- INSTRUCTIONS -->
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingTwo">
+              <button class="accordion-button" type="button" name="button" data-toggle="collapse" data-target="#collapseTwo">INSTRUCTIONS</button>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+              <div class="panel-body">
+              </div>
+            </div>
+          </div>
+
+          <!-- COMMENTS -->
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingThree">
+              <button class="accordion-button" type="button" name="button" data-toggle="collapse" data-target="#collapseThree">COMMENTS</button>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+              <div id="comments-panel" class="panel-body">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.2.3/bootstrap-slider.min.js" crossorigin="anonymous"></script> -->
+  <!-- <script type="text/javascript" src="js/plane.js"></script> -->
+  <!-- <script type="text/javascript" src="js/trafficInspector.js"></script> -->
+  <!-- <script type="text/javascript" src="js/game2.js"></script> -->
+  <!-- <script type="text/javascript" src="js/indexGame.js"></script> -->
+  <script type="text/javascript" src="js/codebird.js"></script>
+  <script type="text/javascript" src="js/twitterapi.js"></script>
+  <!-- <script type="text/javascript" src="js/main.js"></script> -->
+</body>
+
+</html>
