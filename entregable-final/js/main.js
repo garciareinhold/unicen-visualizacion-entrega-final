@@ -41,4 +41,40 @@ $('#ex1').slider( function(value) {
 		return 'Current value: ' + value;
 	});
 
+
+
+  $("#right").click(function() {
+  var currentLeft = parseInt($('.items').css('left'));
+  if (currentLeft>(600)) {
+
+    $('.items').css('left', (currentLeft - 400) + 'px');
+  }
+})
+
+$('#left').click(function() {
+  var currentLeft = parseInt($('.items').css('left'));
+  if(currentLeft<=(1100-400)){
+    $('.items').css('left', (currentLeft + 400) + 'px');
+  }
+})
+
+$("#right-offer").click(function() {
+var currentLeft = parseInt($('.offer-items').css('left'));
+if (currentLeft>(600)) {
+
+  $('.offer-items').css('left', (currentLeft - 400) + 'px ');
+}
+})
+
+$('#left-offer').click(function() {
+var currentLeft = parseInt($('.offer-items').css('left'));
+if(currentLeft<=(1100-400)){
+  $('.offer-items').css('left', (currentLeft + 400) + 'px');
+}
+})
+
+
+
+
+
 });
