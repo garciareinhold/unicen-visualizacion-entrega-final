@@ -89,21 +89,25 @@ padding: 6px;
 
 /* ////////////////////GAMES v2//////////////////// */
 
+.container-carousel{
+  width: 100%;
+  height: 800px;
+  position: static;
+  border: 1px solid black;
+}
+
+.container-item-carousel{
+  margin: auto;
+  position: relative;
+  width: 100%;
+  height: 300px;
+  border: 1px solid yellow;
+}
+
 .title-home{
       margin-left: 60px;
 }
 
-.offers{
-    margin-top: 17%;
-  }
-
-.offer-items{
-    top: 74% !important;
-}
-
-.button-overlay-offer{
-    top: 64.5% !important;
-}
 
 .flex-container {
   display: flex;
@@ -124,7 +128,7 @@ padding: 6px;
   justify-content: center;
   display: flex;
   align-items: center;
-  top: 35%;
+  top: 51%;
   transform: translateY(-50%) translateX(-50%);
   transition: left .5s;
   transition-timing-function: ease-in-out;
@@ -149,8 +153,8 @@ padding: 6px;
   align-items: center;
   display: flex;
   opacity: 0.9;
-  top: 25.5%;
-  cursor: pointer;
+    top: 28.5%;
+     cursor: pointer;
 }
 
 .left {
