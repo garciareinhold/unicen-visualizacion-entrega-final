@@ -843,3 +843,68 @@ min-height: 350px;
   transform: translate(5px, -50%);
   opacity: 1;
 }
+
+
+
+
+
+
+
+
+
+.t3xts {
+  font-size: 50px;
+  margin-left: 50px;
+  line-height: 1;
+  position: relative;
+  perspective: 1000px;
+  text-transform: uppercase;
+}
+
+.t3xt {
+  transform-style: preserve-3d;
+  position: absolute;
+  top: 0;
+  text-transform: uppercase;
+}
+
+.t3xt-out {
+  animation: text-out 0.5s ease;
+}
+
+.t3xt-in {
+  animation: text-in 0.5s ease;
+}
+
+@keyframes text-out {
+  to {
+    transform: rotateX(90deg);
+    opacity: 0;
+  }
+}
+@keyframes text-in {
+  from {
+    opacity: 0;
+    transform: rotateX(-90deg);
+  }
+  to {
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
+}
+.ref {
+  background-color: #000;
+  border-radius: 3px;
+  padding: 5px 8px;
+  position: absolute;
+  font-size: 16px;
+  bottom: 10px;
+  right: 10px;
+  color: #fff;
+  font-weight: 300;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+.ref::first-letter {
+  font-size: 12px;
+}
