@@ -156,6 +156,12 @@ function changetext() {
 
 
 
+$(".dropdown-menu li a").click(function(ev){
+  ev.preventDefault();
+  $(this).parents(".dropdown").find('.btn').html($(this).text() + ' <span class="caret"></span>');
+  $(this).parents(".dropdown").find('.btn').val($(this).data('value'));
+});
+
 
 
 });

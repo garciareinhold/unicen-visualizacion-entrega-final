@@ -82,6 +82,12 @@ body {
   padding: 0px;
 }
 
+.advanced-search-input {
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #cad0d8 !important;
+  font-size: 15px !important;
+}
+
 .btn-secondary {
   color: #1f3a62 !important;
   background-color: #cad0d8 !important;
@@ -112,7 +118,38 @@ hr.style1 {
 }
 
 .advanced-search {
-  padding: 6px;
+  padding: 7px;
+  color: #cad0d8;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 15px;
+}
+
+.advanced-search:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.fa-search, .advanced-search-button {
+  color: white !important;
+}
+
+.advanced-search-button {
+  border: 0.5px solid #cad0d8 !important;
+}
+
+.advanced-search-button:hover {
+  border-color: #5a6268 !important;
+  background-color: #5a6268 !important;
+}
+
+#game-brand:hover {
+  color: white;
+}
+
+.btn-secondary {
+  font-family: "Noto Sans JP", sans-serif !important;
+  font-size: 15px !important;
+  color: #1f3a62 !important;
 }
 
 .popover {
@@ -140,6 +177,13 @@ hr.style1 {
   position: relative;
   width: 100%;
   height: 300px;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, .125);
+  border-radius: .25rem;
+  margin-bottom: 23px;
+  padding-top: 6px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, .1);
 }
 
 .container-games {
@@ -315,6 +359,7 @@ hr.style1 {
   transform: rotateY(0deg);
   transform-style: preserve-3d;
   z-index: 1;
+  border-radius: 7px;
 }
 
 .square-flip:hover .square {
@@ -504,11 +549,10 @@ hr.style1 {
 
 .row-games {
   max-width: 100%;
-  margin: 50px auto 0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content:space-around;
+  justify-content: space-around;
 }
 
 .card {
@@ -553,7 +597,7 @@ hr.style1 {
 
 .card .wrapper {
   background-color: #fff;
-min-height: 350px;
+  min-height: 350px;
   position: relative;
   overflow: hidden;
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);
@@ -592,6 +636,8 @@ min-height: 350px;
 .card .text {
   height: 70px;
   margin: 0;
+  font-family: "Noto Sans JP", sans-serif;
+    font-size: 14px;
 }
 
 .card input[type='checkbox'] {
@@ -603,56 +649,93 @@ min-height: 350px;
   transform: translateY(-60px);
 }
 
-
-
-.game1{
+.game1 {
   background: url(../assets/images/510253691532682602.jpg) center/cover no-repeat;
 }
-  .game2{
-    background: url(../assets/images/codbo403-245f2b818440e70fbc59aebd444649fd-1200x600.jpg) center/cover no-repeat;
 
-  }
-    .game3{
-      background: url(../assets/images/dy2.png) center/cover no-repeat;
+.game2 {
+  background: url(../assets/images/codbo403-245f2b818440e70fbc59aebd444649fd-1200x600.jpg) center/cover no-repeat;
+}
 
-    }
-      .game4{
+.game3 {
+  background: url(../assets/images/dy2.png) center/cover no-repeat;
+}
 
-        background: url(../assets/images/fallout76.jpg) center/cover no-repeat;
+.game4 {
+  background: url(../assets/images/fallout76.jpg) center/cover no-repeat;
+}
 
-      }
-        .game5{
-          background: url(../assets/images/fifa19.jpg) center/cover no-repeat;
+.game5 {
+  background: url(../assets/images/fifa19.jpg) center/cover no-repeat;
+}
 
-        }
-          .game6{
-            background: url(../assets/images/god-of-war-key-art-01-ps4-us-01nov17.jpg) center/cover no-repeat;
+.game6 {
+  background: url(../assets/images/god-of-war-key-art-01-ps4-us-01nov17.jpg) center/cover no-repeat;
+}
 
-          }
-            .game7{
-              background: url(../assets/images/mafia3.jpg) center/cover no-repeat;
+.game7 {
+  background: url(../assets/images/mafia3.jpg) center/cover no-repeat;
+}
 
-            }
-              .game8{
-                background: url(../assets/images/pugb.jpg) center/cover no-repeat;
+.game8 {
+  background: url(../assets/images/pugb.jpg) center/cover no-repeat;
+}
 
-              }
-                .game9{
-                  background: url(../assets/images/rdr3.jpg) center/cover no-repeat;
+.game9 {
+  background: url(../assets/images/rdr3.jpg) center/cover no-repeat;
+}
 
-                }
-                  .game10{
-                    background: url(../assets/images/re7.jpg ) center/cover no-repeat;
+.game10 {
+  background: url(../assets/images/re7.jpg ) center/cover no-repeat;
+}
 
-                 }
-                    .game11{
-                      background: url(../assets/images/spiderman.jpg ) center/cover no-repeat;
+.game11 {
+  background: url(../assets/images/spiderman.jpg ) center/cover no-repeat;
+}
 
-                    }
-                      .game12{
-                        background: url(../assets/images/ufc.jpg ) center/cover no-repeat;
+.game12 {
+  background: url(../assets/images/ufc.jpg ) center/cover no-repeat;
+}
 
-                      }
+.game1-2 {
+  background: url(../assets/images/assasins2.jpg ) center/cover no-repeat;
+}
+
+.game2-2 {
+  background: url(../assets/images/blackops2.png ) center/cover no-repeat;
+}
+
+.game3-2 {
+  background: url(../assets/images/dying2.jpg ) center/cover no-repeat;
+}
+
+.game4-2 {
+  background: url(../assets/images/fallout2.jpg ) center/cover no-repeat;
+}
+
+.game5-2 {
+  background: url(../assets/images/fifa192.jpg ) center/cover no-repeat;
+}
+
+.game6-2 {
+  background: url(../assets/images/gow42.jpg) center/cover no-repeat;
+}
+
+.game7-2 {
+  background: url(../assets/images/mafia32.jpg) center/cover no-repeat;
+}
+
+.game8-2 {
+  background: url(../assets/images/pugb2.jpg) center/cover no-repeat;
+}
+
+.game9-2 {
+  background: url(../assets/images/rdr22.png) center/cover no-repeat;
+}
+
+.game10-2 {
+  background: url(../assets/images/re72.jpg) center/cover no-repeat;
+}
 
 .example-1 .date {
   position: absolute;
@@ -676,6 +759,11 @@ min-height: 350px;
 
 .example-1 .date .month {
   text-transform: uppercase;
+}
+
+.gallery-games-title, .gallery-games-reverse{
+  font-family: "Noto Sans JP", sans-serif !important;
+    font-size: 17px !important;
 }
 
 .example-1 .date .month,
@@ -765,7 +853,6 @@ min-height: 350px;
   top: -10px;
 }
 
-
 .example-2 .wrapper:hover .menu-content span {
   -webkit-transform: translate(-50%, -10px);
   transform: translate(-50%, -10px);
@@ -813,6 +900,9 @@ min-height: 350px;
 
 .example-2 .title a {
   color: #fff;
+font-family: "Noto Sans JP", sans-serif;
+font-size: 38px;
+text-decoration: none;
 }
 
 .example-2 .button {
@@ -825,6 +915,26 @@ min-height: 350px;
   line-height: 1;
   position: relative;
   font-weight: 700;
+}
+
+.sort {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin: 55px;
+  margin-bottom: 40px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 12px;
+  color: #1f3a62;
+}
+
+.dropdown button, .dropdown ul li a {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 12px;
+  text-align: center;
+  text-decoration: none;
+  color: #1f3a62 !important;
 }
 
 .example-2 .button::after {
@@ -844,21 +954,19 @@ min-height: 350px;
   opacity: 1;
 }
 
+.square2 {
+  border-radius: 7px;
+}
 
-
-
-
-
-
-
-
-.t3xts {
-  font-size: 50px;
-  margin-left: 50px;
+.t3xts, .title-home {
+  color: #1f3a62;
+  font-family: "Montserrat", sans-serif;
+  margin-left: 55px;
   line-height: 1;
   position: relative;
   perspective: 1000px;
   text-transform: uppercase;
+  font-size: 33px;
 }
 
 .t3xt {
@@ -882,16 +990,19 @@ min-height: 350px;
     opacity: 0;
   }
 }
+
 @keyframes text-in {
   from {
     opacity: 0;
     transform: rotateX(-90deg);
   }
+
   to {
     transform: rotateX(0deg);
     opacity: 1;
   }
 }
+
 .ref {
   background-color: #000;
   border-radius: 3px;
@@ -905,6 +1016,7 @@ min-height: 350px;
   font-family: sans-serif;
   text-decoration: none;
 }
+
 .ref::first-letter {
   font-size: 12px;
 }
