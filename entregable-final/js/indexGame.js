@@ -8,6 +8,9 @@ $(document).ready(function() {
   }
 
   $(document).on("keydown", function(event){
+    if([32, 37, 38, 39, 40].indexOf(event.keyCode) > -1) {
+         event.preventDefault();
+     }
       if(game!=null){
         game.plane.move(event);
 

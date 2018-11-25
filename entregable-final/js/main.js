@@ -36,10 +36,6 @@ $( document ).ready(function() {
     });
 });
 
-$('#ex1').slider( function(value) {
-  console.log("entre");
-		return 'Current value: ' + value;
-	});
 
 
 
@@ -163,5 +159,37 @@ $(".dropdown-menu li a").click(function(ev){
 });
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$(function() {
+  $("#price-range").slider({
+    range: "max",
+    min: 30000,
+    max: 500000,
+    value: 100000,
+    step: 1000,
+    slide: function(event, ui) {
+      $("#priceRange").val("$" + ui.value);
+    }
+  });
+  $("#priceRange").val("$" + $("#price-range").slider("value"));
+});
 
 });

@@ -36,8 +36,8 @@ Game.prototype.raiseEnemies = function () {
 Game.prototype.beginLifeInterval = function () {
   this.lifeInterval= setInterval((function(){
     $(this.life)
-    .clearQueue()
-    .stop()
+    // .clearQueue()
+    // .stop()
     .css({
       left: Math.random() * 325 + "px",
       top: "-110px",
