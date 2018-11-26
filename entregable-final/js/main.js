@@ -1,7 +1,13 @@
 $( document ).ready(function() {
 
+
+
+
+
+
   //////NAV
      $('.leftmenutrigger').on('click', function(e) {
+       console.log("entro");
        e.preventDefault();
      $('.side-nav').toggleClass("open");
      $('[rel="popover"]').popover('hide')
@@ -35,6 +41,9 @@ $( document ).ready(function() {
         }
 
     });
+
+
+
 });
 
 

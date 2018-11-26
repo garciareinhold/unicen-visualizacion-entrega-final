@@ -43,7 +43,8 @@ function printStatuses(tweets) {
     $(text).append(tweets[i].full_text);
 
     let text_data=document.createElement("p");
-    $(text_data).append("<strong>Created at:</strong> "+tweets[i].user.created_at);
+    $(text_data).append("<div class='retweet-container'><strong>Created at:</strong> "+tweets[i].user.created_at+ "<div class='retweet'><div class='dot'><strong>RT:</strong>"+tweets[i].retweet_count+"</div></div></div>");
+
 
     if(tweets[i].place!=null){
       $(text_data).append(" Location:"+tweets[i].place.country);
@@ -63,13 +64,3 @@ function printStatuses(tweets) {
 
   }
 }
-
-
-// var params = "status=" + encodeURIComponent("@");
-// cb.__call(
-//     "statuses_update",
-//     params,
-//     function (reply) {
-//         // ...
-//     }
-// );

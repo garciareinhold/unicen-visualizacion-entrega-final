@@ -1253,3 +1253,243 @@ a.bttn:hover {
   right: 0;
   opacity: 1;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* :root {
+  --rotate: 0deg;
+} */
+
+#hi-score-effect, #hi-score-effect tbody, #hi-score-effect tr {
+  position: absolute;
+}
+
+
+
+.panel-score{
+  position: relative;
+  height: 75vh;
+  perspective: 100em;
+  perspective-origin: 50% 50%;
+  font-weight: 100;
+}
+
+#hi-score-effect {
+  top: 50%;
+  left: 50%;
+  font-size: 8vmin;
+  line-height: 8vmin;
+  transform-style: preserve-3d;
+  transform-origin: 50% 50% 50%;
+  transform: rotateY(var(--rotate));
+  transition: transform 500ms ease-in-out;
+}
+
+#hi-score-effect tbody {
+  transform-style: preserve-3d;
+}
+
+#hi-score-effect tbody > tr {
+  margin: -4em;
+  width: 8em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  -webkit-box-reflect: below 0 -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, transparent), to(RGBA(0, 0, 0, 0.05)));
+}
+
+#hi-score-effect tbody > tr > th {
+
+  width: 50%;
+  background-color: white;
+}
+
+#hi-score-effect tbody > tr:nth-child(1) {
+  transform: rotateY(60deg) translateZ(3.4568em);
+}
+#hi-score-effect tbody > tr:nth-child(1) > td {
+  background-color: rgba(63, 40, 80, 0.97);
+}
+#hi-score-effect tbody > tr:nth-child(1) > th {
+  background-color: rgba(31, 20, 39, 0.97);
+}
+
+#hi-score-effect tbody > tr:nth-child(2) {
+  transform: rotateY(120deg) translateZ(3.4568em);
+}
+#hi-score-effect tbody > tr:nth-child(2) > td {
+  background-color: rgba(77, 40, 80, 0.97);
+}
+#hi-score-effect tbody > tr:nth-child(2) > th {
+  background-color: rgba(38, 20, 39, 0.97);
+}
+
+#hi-score-effect tbody > tr:nth-child(3) {
+  transform: rotateY(180deg) translateZ(3.4568em);
+}
+#hi-score-effect tbody > tr:nth-child(3) > td {
+  background-color: rgba(80, 40, 70, 0.97);
+}
+#hi-score-effect tbody > tr:nth-child(3) > th {
+  background-color: rgba(39, 20, 34, 0.97);
+}
+
+#hi-score-effect tbody > tr:nth-child(4) {
+  transform: rotateY(240deg) translateZ(3.4568em);
+}
+#hi-score-effect tbody > tr:nth-child(4) > td {
+  background-color: rgba(80, 40, 57, 0.97);
+}
+#hi-score-effect tbody > tr:nth-child(4) > th {
+  background-color: rgba(39, 20, 28, 0.97);
+}
+
+#hi-score-effect tbody > tr:nth-child(5) {
+  transform: rotateY(300deg) translateZ(3.4568em);
+}
+#hi-score-effect tbody > tr:nth-child(5) > td {
+  background-color: rgba(80, 40, 43, 0.97);
+}
+#hi-score-effect tbody > tr:nth-child(5) > th {
+  background-color: rgba(39, 20, 21, 0.97);
+}
+
+#hi-score-effect tbody > tr:nth-child(6) {
+  transform: rotateY(360deg) translateZ(3.4568em);
+}
+#hi-score-effect tbody > tr:nth-child(6) > td {
+  background-color: rgba(80, 50, 40, 0.97);
+}
+#hi-score-effect tbody > tr:nth-child(6) > th {
+  background-color: rgba(39, 25, 20, 0.97);
+}
+
+#hi-score-effect tbody > tr > th {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+
+#hi-score-effect tbody > tr > td {
+  width: 50%;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+#hi-score-effect tbody > tr > td:not(:last-child) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.pic-ranking img{
+  max-width: 100%;
+  min-width: 100%;
+}
+
+
+.retweet {
+  margin-right: 11%;
+      float: right;
+}
+
+.dot {
+  width: 2vw;
+  height: 2vw;
+  border-radius: 50%;
+  position: relative;
+}
+.dot:before {
+  background-color: #3b567e;
+  width: 4vw;
+  height: 4vw;
+  border-radius: 50%;
+  content: '';
+  display: block;
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  -webkit-animation: shineAnimation 3s infinite ease-out;
+          animation: shineAnimation 3s infinite ease-out;
+}
+.dot:after {
+  background-color: #3b567e;
+  width: 4vw;
+  height: 4vw;
+  border-radius: 50%;
+  content: '';
+  display: block;
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  opacity: 0;
+  -webkit-animation: shineAnimation 3s 1.5s infinite ease-out;
+          animation: shineAnimation 3s 1.5s infinite ease-out;
+}
+
+@-webkit-keyframes shineAnimation {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+    -webkit-transform-origin: center;
+            transform-origin: center;
+  }
+  100% {
+    -webkit-transform: scale(3);
+            transform: scale(3);
+    opacity: 0;
+    -webkit-transform-origin: center;
+            transform-origin: center;
+  }
+}
+
+@keyframes shineAnimation {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+    -webkit-transform-origin: center;
+            transform-origin: center;
+  }
+  100% {
+    -webkit-transform: scale(3);
+            transform: scale(3);
+    opacity: 0;
+    -webkit-transform-origin: center;
+            transform-origin: center;
+  }
+}
