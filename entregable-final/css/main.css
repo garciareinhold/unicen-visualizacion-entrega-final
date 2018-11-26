@@ -106,15 +106,33 @@ body {
 
 .nav-link {
   color: #1f3a62 !important;
+  margin: 8px 0px;
 }
 
 hr.style1 {
-  border-top: 1px solid black;
+  border-top: 3px solid #bdbdbd;
   width: 100%;
+  margin: 2px 0px;
 }
 
 #search-input {
   width: 500px;
+}
+
+.nav-link i{
+  margin-right: 10px;
+}
+
+.contact-us{
+  text-decoration: underline;
+}
+
+.footer-item{
+  margin-top: 143px;
+text-align: center;
+font-family: "Noto Sans Jp", sans-serif;
+font-size: 12px;
+color:rgb(138, 138, 138);
 }
 
 .advanced-search {
@@ -264,6 +282,7 @@ hr.style1 {
 .game-title {
   font-family: "Montserrat", sans-serif;
   margin-bottom: 30px;
+  color:  #1f3a62;
 }
 
 .accordion-head i{
@@ -787,6 +806,15 @@ hr.style1 {
 
 }
 
+a.nav-link:hover{
+  background-color:rgba(61, 61, 61, 0.86);
+}
+
+.vertical-item a:hover {
+  color: white !important;
+
+}
+
 .gallery-games-reverse{
   width: 100%;
   height: 100%;
@@ -1168,6 +1196,7 @@ a.bttn {
   text-decoration: none;
   -webkit-transition: 0.3s all ease;
   transition: 0.3s ease all;
+  font-family: "Montserrat", sans-serif;
 }
 a.bttn:hover {
   color: #FFF;
