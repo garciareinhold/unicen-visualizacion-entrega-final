@@ -16,14 +16,6 @@ $( document ).ready(function() {
     })
 
 
-    // $('#open-popover-link').popover({
-    //     container:'body',
-    //     placement: 'bottom',
-    //     html: true,
-    //     content: function() {
-    //     	return $('#popover-container').html();
-    //     },
-    // });
     $(function(){
     $('[rel="popover"]').popover({
         placement: "bottom",
@@ -169,35 +161,5 @@ $(".dropdown-menu li a").click(function(ev){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-$(function() {
-  $("#price-range").slider({
-    range: "max",
-    min: 30000,
-    max: 500000,
-    value: 100000,
-    step: 1000,
-    slide: function(event, ui) {
-      $("#priceRange").val("$" + ui.value);
-    }
-  });
-  $("#priceRange").val("$" + $("#price-range").slider("value"));
-});
 
 });
