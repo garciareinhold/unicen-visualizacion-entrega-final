@@ -171,8 +171,7 @@ color:rgb(138, 138, 138);
 }
 
 .popover {
-  left: -165px !important;
-  right: 0px !important;
+  /* right: 0px !important; */
   width: 100%;
   max-width: none !important;
 }
