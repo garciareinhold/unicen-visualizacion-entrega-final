@@ -1,6 +1,5 @@
 .game-background, .options, .hi-score, .how-to-play, .start-menu, .controls {
-  margin-left: 15%;
-  top: 20%;
+
   right: 0;
   left: 0;
   width: 717px;
@@ -12,11 +11,15 @@
 
 .controls{
   text-align: center;
-  margin-left: 65%;
   background-color: black;
   width: 200px;
   font-family: 'VT323', monospace;
+margin-left: 720px;
+}
 
+.game-data-buttons{
+  margin-top: 40px;
+  /* max-width: 920px; */
 }
 
 .game-img{

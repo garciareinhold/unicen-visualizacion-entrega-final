@@ -93,11 +93,11 @@
 
 
   <div class="container-fluid">
-    <h2 class="game-title">Memories 1942</h2>
 
     <!-- GAMEPAGE -->
-    <div class="row">
-      <div class="col game-container">
+    <div class="container-game">
+      <div class="game-wrapper">
+        <h2 class="game-title">Memories 1942</h2>
         <!-- aca va el div del juego  -->
         <div class="game-background">
           <div class="sky-background">
@@ -174,7 +174,6 @@
 
 
     <!--CONTROLS-HI_SCORES-COMMENTS -->
-    <div class="row row-game-data">
       <div class="game-data-buttons">
         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 
@@ -186,7 +185,10 @@
                   Collapsible Group Item #1
                 </a>
               </h4> -->
-              <button class="accordion-button" type="button" name="button" data-toggle="collapse" data-target="#collapseOne">CONTROLS</button>
+              <!-- <button class="accordion-button " type="button" name="button" data-toggle="collapse" data-target="#collapseOne">CONTROLS</button> -->
+              <div class="flex">
+                <a href="#0" class="bttn"  name="button" data-toggle="collapse" data-target="#collapseOne">CONTROLS</a>
+              </div>
             </div>
             <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
               <div class="panel-body">
@@ -200,7 +202,9 @@
           <!-- INSTRUCTIONS -->
           <div class="panel panel-default">
             <div class="panel-heading" role="tab" id="headingTwo">
-              <button class="accordion-button" type="button" name="button" data-toggle="collapse" data-target="#collapseTwo">INSTRUCTIONS</button>
+              <div class="flex">
+                <a href="#0" class="bttn"  name="button" data-toggle="collapse" data-target="#collapseTwo">INSTRUCTIONS</a>
+              </div>
             </div>
             <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
               <div class="panel-body">
@@ -211,7 +215,9 @@
           <!-- COMMENTS -->
           <div class="panel panel-default">
             <div class="panel-heading" role="tab" id="headingThree">
-              <button class="accordion-button" type="button" name="button" data-toggle="collapse" data-target="#collapseThree">COMMENTS</button>
+              <div class="flex">
+                <a href="#0" class="bttn"  name="button" data-toggle="collapse" data-target="#collapseThree">COMMENTS</a>
+              </div>
             </div>
             <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
               <div id="comments-panel" class="panel-body">
@@ -220,9 +226,10 @@
           </div>
         </div>
       </div>
-    </div>
 
   </div>
+
+
 
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>

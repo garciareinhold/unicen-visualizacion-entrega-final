@@ -262,9 +262,17 @@ hr.style1 {
 
 /* ////////////////////GAME-PAGE//////////////////// */
 .game-title {
-  margin-left: 15%;
-  /* text-align: center; */
+  font-family: "Montserrat", sans-serif;
   margin-bottom: 30px;
+}
+
+.accordion-head i{
+    font-size: 2.5em;
+    float: right;
+}
+
+.accordion-head > .collapsed > i:before{
+    content: "\f105";
 }
 
 .row-game-data {
@@ -279,9 +287,20 @@ hr.style1 {
 
 .accordion-button {
   width: 100%;
-  height: 50px;
+  height: 50%;
   background-color: #3b567e;
   border: 1px solid black;
+}
+
+.container-game{
+  width: 100%;
+    height:570px;
+}
+.game-wrapper{
+      position: relative;
+      width: 920px;
+      height: 100%;
+      margin: auto;
 }
 
 #comments-panel {
@@ -764,6 +783,17 @@ hr.style1 {
 .gallery-games-title, .gallery-games-reverse{
   font-family: "Noto Sans JP", sans-serif !important;
     font-size: 17px !important;
+    color: white !important;
+
+}
+
+.gallery-games-reverse{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(42, 205, 33);
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
 }
 
 .example-1 .date .month,
@@ -1094,3 +1124,104 @@ span.ui-slider-handle.ui-state-default.ui-corner-all:before, span.ui-slider-hand
     top: 11px;
 }
 span.ui-slider-handle.ui-state-default.ui-corner-all:after {left: 18px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.button-effect {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a.bttn {
+  color: #3b567e;
+  text-decoration: none;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s ease all;
+}
+a.bttn:hover {
+  color: #FFF;
+  text-decoration: none !important;
+}
+
+.bttn-focus:focus {
+  color: #FFF;
+  text-decoration: none !important;
+  background-color:#3b567e;
+
+}
+
+.sort-by{
+  text-align: center !important;
+}
+
+.sort-by  li:hover{
+  background-color: #cad0d8;
+}
+
+
+.bttn {
+  height: 40px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  font-weight: bold;
+  padding: 4px 0px;
+  border: 3px solid #3b567e;
+  border-radius: 2px;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+.bttn:before {
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: '';
+  background-color: #3b567e;
+  z-index: -2;
+}
+.bttn:hover:before {
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}

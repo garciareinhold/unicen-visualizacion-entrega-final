@@ -8,6 +8,14 @@ $( document ).ready(function() {
     });
 
 
+    $(".bttn").on('click', function(ev){
+      console.log("entre");
+      console.log($(this));
+      ev.preventDefault();
+      $(this).toggleClass("bttn-focus");
+    })
+
+
     // $('#open-popover-link').popover({
     //     container:'body',
     //     placement: 'bottom',
