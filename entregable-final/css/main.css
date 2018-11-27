@@ -107,6 +107,7 @@ body {
 .nav-link {
   color: #1f3a62 !important;
   margin: 8px 0px;
+  font-size: 15px !important;
 }
 
 hr.style1 {
@@ -203,6 +204,7 @@ color:rgb(138, 138, 138);
   box-shadow: 0 3px 5px rgba(0, 0, 0, .1);
 }
 
+
 .container-games {
   margin: auto;
   position: relative;
@@ -239,6 +241,10 @@ color:rgb(138, 138, 138);
   transition-timing-function: ease-in-out;
   position: absolute;
   left: 1100px;
+}
+
+.offer-items{
+  left: 1204px;
 }
 
 .image:hover {
@@ -323,7 +329,17 @@ color:rgb(138, 138, 138);
 
 #comments-panel {
   text-align: left !important;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 15px;
+  color: #5a6268 ;
 }
+
+#comments-panel h5{
+  color: #3b567e;
+}
+
+
+
 
 .panel-default {
   margin: auto;
@@ -722,8 +738,16 @@ color:rgb(138, 138, 138);
   background: url(../assets/images/rdr3.jpg) center/cover no-repeat;
 }
 
+.game-memories{
+  background: url(../assets/images/memories1942.jpg) center/cover no-repeat;
+}
+
+.game-memories-2{
+  background: url(../assets/images/secondmemories.jpg) center/cover no-repeat;
+}
+
 .game10 {
-  background: url(../assets/images/re7.jpg ) center/cover no-repeat;
+  background: url(../assets/images/re7.jpg) center/cover no-repeat;
 }
 
 .game11 {
@@ -982,7 +1006,7 @@ text-decoration: none;
   margin: 55px;
   margin-bottom: 40px;
   font-family: "Noto Sans JP", sans-serif;
-  font-size: 12px;
+  font-size: 15px;
   color: #1f3a62;
 }
 
@@ -1152,7 +1176,13 @@ span.ui-slider-handle.ui-state-default.ui-corner-all:before, span.ui-slider-hand
 }
 span.ui-slider-handle.ui-state-default.ui-corner-all:after {left: 18px;}
 
-
+.keys-container{
+  justify-content: space-around;
+    display: flex;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 15px;
+    color:  #1f3a62;
+}
 
 
 
@@ -1312,7 +1342,7 @@ a.bttn:hover {
   top: 50%;
   left: 50%;
   font-size: 8vmin;
-  line-height: 8vmin;
+  line-height: 6vmin;
   transform-style: preserve-3d;
   transform-origin: 50% 50% 50%;
   transform: rotateY(var(--rotate));
@@ -1321,6 +1351,7 @@ a.bttn:hover {
 
 #hi-score-effect tbody {
   transform-style: preserve-3d;
+  font-family: "Noto Sans Jp", sans-serif;
 }
 
 #hi-score-effect tbody > tr {
@@ -1333,9 +1364,7 @@ a.bttn:hover {
 }
 
 #hi-score-effect tbody > tr > th {
-
   width: 50%;
-  background-color: white;
 }
 
 #hi-score-effect tbody > tr:nth-child(1) {
@@ -1403,6 +1432,12 @@ a.bttn:hover {
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 0.5em;
+      background-color: rgba(0,0,0, 0.89) !important;
+      color: white;
+}
+
+.points-raking{
+  color: white !important;
 }
 
 #hi-score-effect tbody > tr > td {
@@ -1410,6 +1445,8 @@ a.bttn:hover {
   color: white;
   font-size: 20px;
   text-align: center;
+  background-color: rgba(0,0,0, 0.99) !important;
+  color: green;
 }
 #hi-score-effect tbody > tr > td:not(:last-child) {
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);

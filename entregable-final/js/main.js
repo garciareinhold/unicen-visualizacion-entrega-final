@@ -169,7 +169,16 @@ $(".dropdown-menu li a").click(function(ev){
 });
 
 
+$(".back-home").on("click", function(ev){
+  ev.preventDefault();
+  location.href="https://garciareinhold.github.io/unicen-visualizacion-entrega-final/entregable-final/";
+})
 
 
+
+$(".go-game").on("click", function(ev){
+  ev.preventDefault();
+  location.href="https://garciareinhold.github.io/unicen-visualizacion-entrega-final/entregable-final/game.html";
+})
 
 });
