@@ -1446,7 +1446,7 @@ a.bttn:hover {
   font-size: 20px;
   text-align: center;
   background-color: rgba(0,0,0, 0.99) !important;
-  color: green;
+  color: white;
 }
 #hi-score-effect tbody > tr > td:not(:last-child) {
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
@@ -1497,7 +1497,25 @@ a.bttn:hover {
           animation: shineAnimation 3s 1.5s infinite ease-out;
 }
 
-@-webkit-keyframes shineAnimation {
+
+@keyframes shineAnimation {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+    -webkit-transform-origin: center;
+            transform-origin: center;
+  }
+  100% {
+    -webkit-transform: scale(3);
+            transform: scale(3);
+    opacity: 0;
+    -webkit-transform-origin: center;
+            transform-origin: center;
+  }
+}
+
+@keyframes shineAnimation {
   0% {
     -webkit-transform: scale(0);
             transform: scale(0);
