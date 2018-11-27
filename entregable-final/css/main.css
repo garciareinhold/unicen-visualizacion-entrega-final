@@ -1470,7 +1470,6 @@ a.bttn:hover {
   position: relative;
 }
 .dot:before {
-  background-color: #3b567e;
   width: 4vw;
   height: 4vw;
   border-radius: 50%;
@@ -1479,11 +1478,9 @@ a.bttn:hover {
   position: absolute;
   top: -50%;
   left: -50%;
-  -webkit-animation: shineAnimation 3s infinite ease-out;
-          animation: shineAnimation 3s infinite ease-out;
+
 }
 .dot:after {
-  background-color: #3b567e;
   width: 4vw;
   height: 4vw;
   border-radius: 50%;
@@ -1493,12 +1490,67 @@ a.bttn:hover {
   top: -50%;
   left: -50%;
   opacity: 0;
-  -webkit-animation: shineAnimation 3s 1.5s infinite ease-out;
-          animation: shineAnimation 3s 1.5s infinite ease-out;
+
+}
+
+.dot-1:after{
+  background-color: #3b567e;
+  -webkit-animation: shineAnimation-1 3s 1.5s infinite ease-out;
+          animation: shineAnimation-1 3s 1.5s infinite ease-out;
+}
+
+.dot-1:before{
+  background-color: #3b567e;
+  -webkit-animation: shineAnimation-1 3s infinite ease-out;
+          animation: shineAnimation-1 3s infinite ease-out;
 }
 
 
-@keyframes shineAnimation {
+.dot-2:after{
+  background-color:rgb(82, 179, 0);
+  -webkit-animation: shineAnimation-2 2s 1s infinite ease-out;
+          animation: shineAnimation-2 2s 1s infinite ease-out;
+}
+
+.dot-2:before{
+  background-color: rgb(82, 179, 0);
+  -webkit-animation: shineAnimation-2 2s infinite ease-out;
+          animation: shineAnimation-2 2s infinite ease-out;
+}
+
+
+.dot-3:after{
+  background-color: rgb(245, 23, 0);
+  -webkit-animation: shineAnimation-3 1.5s 0.75s infinite ease-out;
+          animation: shineAnimation-3 1.5s 0.75s infinite ease-out;
+}
+
+.dot-3:before{
+  background-color: rgb(245, 23, 0);
+  -webkit-animation: shineAnimation-3 1.5s infinite ease-out;
+          animation: shineAnimation-3 1.5s infinite ease-out;
+}
+
+
+
+@keyframes shineAnimation-1 {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+    -webkit-transform-origin: center;
+            transform-origin: center;
+  }
+  100% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    opacity: 0;
+    -webkit-transform-origin: center;
+            transform-origin: center;
+  }
+}
+
+@keyframes shineAnimation-2 {
   0% {
     -webkit-transform: scale(0);
             transform: scale(0);
@@ -1515,7 +1567,7 @@ a.bttn:hover {
   }
 }
 
-@keyframes shineAnimation {
+@keyframes shineAnimation-3 {
   0% {
     -webkit-transform: scale(0);
             transform: scale(0);
@@ -1524,25 +1576,8 @@ a.bttn:hover {
             transform-origin: center;
   }
   100% {
-    -webkit-transform: scale(3);
-            transform: scale(3);
-    opacity: 0;
-    -webkit-transform-origin: center;
-            transform-origin: center;
-  }
-}
-
-@keyframes shineAnimation {
-  0% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-    opacity: 1;
-    -webkit-transform-origin: center;
-            transform-origin: center;
-  }
-  100% {
-    -webkit-transform: scale(3);
-            transform: scale(3);
+    -webkit-transform: scale(5);
+            transform: scale(5);
     opacity: 0;
     -webkit-transform-origin: center;
             transform-origin: center;

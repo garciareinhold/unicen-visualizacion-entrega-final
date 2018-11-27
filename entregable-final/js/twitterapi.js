@@ -43,7 +43,16 @@ function printStatuses(tweets) {
     $(text).append(tweets[i].full_text);
 
     let text_data=document.createElement("p");
-    $(text_data).append("<div class='retweet-container'><strong>Created at:</strong> "+tweets[i].user.created_at+ "<div class='retweet'><div class='dot'><strong>RT:</strong>"+tweets[i].retweet_count+"</div></div></div>");
+
+    if(tweets[i].retweet_count <= 5){
+      $(text_data).append("<div class='retweet-container'><strong>Created at:</strong> "+tweets[i].user.created_at+ "<div class='retweet'><div class='dot dot-1'><strong>RT</strong>"+tweets[i].retweet_count+"</div></div></div>");
+    }
+    else if(tweets[i].retweet_count <=30){
+      $(text_data).append("<div class='retweet-container'><strong>Created at:</strong> "+tweets[i].user.created_at+ "<div class='retweet'><div class='dot dot-2'><strong>RT</strong>"+tweets[i].retweet_count+"</div></div></div>");
+    }
+    else{
+      $(text_data).append("<div class='retweet-container'><strong>Created at:</strong> "+tweets[i].user.created_at+ "<div class='retweet'><div class='dot dot-3'><strong>RT</strong>"+tweets[i].retweet_count+"</div></div></div>");
+    }
 
 
     if(tweets[i].place!=null){
