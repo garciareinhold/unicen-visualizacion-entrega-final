@@ -74,7 +74,7 @@ if (currentLeft>(600)) {
 
 $('#left-offer').click(function() {
 var currentLeft = parseInt($('.offer-items').css('left'));
-if(currentLeft<=(1100-400)){
+if(currentLeft<=(1500-400)){
   $('.offer-items').css('left', (currentLeft + 400) + 'px');
 }
 })
@@ -130,10 +130,10 @@ function n3xt(text, element) {
 var phraseIndex = 1;
 var wordIndex = 0;
 var t3xts = [
-["Offers", "People´s choice"],
+["Cyber Monday", "People´s choice"],
 ["Buy now!", "Winners of the week"],
 ["Today until friday", "Vote your Favorite!"],
-["Members get a 15% discount.","People´s choice"],
+["Members get a 15% discount","People´s choice"],
 ["Black Friday","Winners of the week"],
 ["20% discount in Bethesda games", "Vote your Favorite!"],
 ["Don´t wait any longer!", "Try the best games"]];
