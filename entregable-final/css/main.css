@@ -1230,10 +1230,16 @@ text-decoration: none;
       color: #3b567e;
       margin-right: 20px;
     }
-    .genres{
-      margin-left: 20%
+    .genres form{
+      text-align: center;
     }
 
+
+
+.contaInter h3{
+  text-align: center;
+  font-size: 17px;
+}
 
 .filter-checkbox{
 
