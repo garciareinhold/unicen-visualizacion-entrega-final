@@ -1192,7 +1192,9 @@ text-decoration: none;
 			margin: 20px 0 20px 0;
 		}
   #amount{
-    margin-left: 30%;
+    text-align: center;
+background-color: transparent;
+border: none;
   }
 
 	.range-bar {
