@@ -1,5 +1,7 @@
 $( document ).ready(function() {
   let showDiv=true;
+  $(".conta").removeClass("show-filter");
+
   $(".conta").hide();
 
 
@@ -10,6 +12,8 @@ $( document ).ready(function() {
          console.log("entro");
          e.preventDefault();
        $('.side-nav').toggleClass("open");
+       $(".conta").removeClass("show-filter");
+
          $(".conta").hide();
          showDiv=true;
       });
@@ -51,9 +55,11 @@ $( document ).ready(function() {
       $('.side-nav').toggleClass("open");
     }
     if (showDiv) {
-      $(".conta").show();
+      $(".conta").addClass("show-filter");
       showDiv=false;
     }else {
+      $(".conta").removeClass("show-filter");
+
       $(".conta").hide();
       showDiv=true;
     }

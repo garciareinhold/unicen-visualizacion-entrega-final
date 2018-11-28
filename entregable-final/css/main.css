@@ -1125,8 +1125,16 @@ text-decoration: none;
 
 
 /* EStilo div popover*/
+
+.show-filter{
+  display: flex !important;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
 .conta{
-  position: absolute;
+  display:none;
+  position: fixed;
   top: 56px;
   width: 100%;
   /* top: 200px; */
@@ -1220,10 +1228,18 @@ text-decoration: none;
     }
     .checkbox-inline{
       color: #3b567e;
+      margin-right: 20px;
     }
     .genres{
       margin-left: 20%
     }
+
+
+.filter-checkbox{
+
+  height: 28px;
+}
+
 /*termina estiloe div popover*/
 
 
