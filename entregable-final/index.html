@@ -7,11 +7,12 @@
 <link href="https://fonts.googleapis.com/css?family=Montserrat|Noto+Sans+JP" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/solid.css" integrity="sha384-rdyFrfAIC05c5ph7BKz3l5NG5yEottvO/DQ0dCrwD8gzeQDjYBHNr1ucUpQuljos" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/fontawesome.css" integrity="sha384-u5J7JghGz0qUrmEsWzBQkfvc8nK3fUT7DCaQzNQ+q4oEXhGSx+P2OqjWsfIRB8QT" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.2.3/css/bootstrap-slider.min.css" crossorigin="anonymous">
-
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <title></title>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://raw.githubusercontent.com/kartik-v/bootstrap-star-rating/master/css/star-rating.min.css">
+  <title>Games.con</title>
 </head>
 
 <body>
@@ -81,20 +82,75 @@
 
 
   <!-- FILTERS -->
-
-  <div id="myPopover" class="hide">
-    <div class="container-filters">
-      <div class="slider-box">
-        <label for="priceRange"></label>
-        <input type="text" id="priceRange" readonly>
-        <div id="price-range" class="slider-filter"></div>
+  <div  class="conta">
+      <div class="contaInter">
+        <div class="price-range-slider">
+          <h3>Price Range</h3>
+          <p class="range-value">
+            <input type="text" id="amount" readonly>
+          </p>
+          <div id="slider-range" class="range-bar"></div>
+        </div>
       </div>
-    </div>
+      <div class="contaInter bordeLeftsolid">
 
-  </div>
+        <div class="star-rating">
+          <h3>Rating</h3>
+          <span class="fa fa-star-o" data-rating="1"></span>
+          <span class="fa fa-star-o" data-rating="2"></span>
+          <span class="fa fa-star-o" data-rating="3"></span>
+          <span class="fa fa-star-o" data-rating="4"></span>
+          <span class="fa fa-star-o" data-rating="5"></span>
+          <input type="hidden" name="whatever1" class="rating-value" value="2.56">
+        </div>
+      </div>
 
+      <div class="contaInter bordeLeftsolid">
+        <div class="form-group">
+          <h3>Age</h3>
+          <select class="selectAge" id="sel1">
+            <option>0-5</option>
+            <option>6-10</option>
+            <option>11-17</option>
+            <option>18+</option>
+          </select>
+        </div>
+      </div>
 
+      <div class="contaInter bordeLeftsolid">
+        <div class="genres">
+              <h3>Genres</h3>
+              <form>
+                <label class="checkbox-inline">
+                  <input type="checkbox" value="">adventure
+                  </label>
+                <label class="checkbox-inline">
+                    <input type="checkbox" value="">horror
+                </label>
+            </form>
 
+                    <form>
+                      <label class="checkbox-inline">
+                        <input type="checkbox" value="">strategy
+                        </label>
+                      <label class="checkbox-inline">
+                          <input type="checkbox" value="">sports
+                      </label>
+                  </form>
+                  <form>
+                    <label class="checkbox-inline">
+                      <input type="checkbox" value="">shooters
+                      </label>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" value="">others
+                    </label>
+                </form>
+            </div>
+            </div>
+            <div class="contaInter bordeLeftsolid">
+              <a href="#"><img class="imgGarbage" src="img/garbage.png" alt=""></a>
+            </div>
+          </div>
   <!-- GAMES GALLERY Peoples choice-->
 
   <div class="container-item-carousel">
@@ -838,9 +894,10 @@
     </div>
   </div>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script type="text/javascript"src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
   <script type="text/javascript" src="js/codebird.js"></script>
   <script type="text/javascript" src="js/twitterapi.js"></script>
   <script type="text/javascript" src="js/main.js"></script>

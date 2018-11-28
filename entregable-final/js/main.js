@@ -1,50 +1,102 @@
 $( document ).ready(function() {
+  let showDiv=true;
+  $(".conta").hide();
 
 
 
 
+    //////NAV
+       $('.leftmenutrigger').on('click', function(e) {
+         console.log("entro");
+         e.preventDefault();
+       $('.side-nav').toggleClass("open");
+         $(".conta").hide();
+         showDiv=true;
+      });
 
 
-  //////NAV
-     $('.leftmenutrigger').on('click', function(e) {
-       console.log("entro");
-       e.preventDefault();
-     $('.side-nav').toggleClass("open");
-     $('[rel="popover"]').popover('hide')
+      $(".bttn").on('click', function(ev){
+        console.log("entre");
+        console.log($(this));
+        ev.preventDefault();
+        $(this).toggleClass("bttn-focus");
+      })
+
+
+  //     $(function(){
+  //     $('[rel="popover"]').popover({
+  //         placement: "bottom",
+  //         container: 'body',
+  //         offset: '-170px',
+  //         html: true,
+  //         content: function () {
+  //             var clone = $($(this).data('popover-content')).clone(true).css('display', "block");
+  //             return clone;
+  //         }
+  //     }).click(function(e) {
+  //         e.preventDefault();
+  //
+  //         if(  $('.side-nav').hasClass("open")){
+  //
+  //           $('.side-nav').toggleClass("open");
+  //         }
+  //
+  //     });
+  //
+  //
+  //
+  // });
+  $(document).on("click",".advanced-search",function(){
+    if($('.side-nav').hasClass("open")){
+      $('.side-nav').toggleClass("open");
+    }
+    if (showDiv) {
+      $(".conta").show();
+      showDiv=false;
+    }else {
+      $(".conta").hide();
+      showDiv=true;
+    }
+
+  });
+
+  $(function() {
+
+  	$( "#slider-range" ).slider({
+  	  range: true,
+  	  min: 10,
+  	  max: 500,
+  	  values: [ 130, 250 ],
+  	  slide: function( event, ui ) {
+        console.log(ui.values[1]);
+  		$( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+  	  }
+  	});
+  	$( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+  	  " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+  });
+  // Starrr plugin (https://github.com/dobtco/starrr)
+  var $star_rating = $('.star-rating .fa');
+
+  var SetRatingStar = function() {
+    return $star_rating.each(function() {
+      if (parseInt($star_rating.siblings('input.rating-value').val()) >= parseInt($(this).data('rating'))) {
+        return $(this).removeClass('fa-star-o').addClass('fa-star');
+      } else {
+        return $(this).removeClass('fa-star').addClass('fa-star-o');
+      }
     });
+  };
 
+  $star_rating.on('click', function() {
+    $star_rating.siblings('input.rating-value').val($(this).data('rating'));
+    return SetRatingStar();
+  });
 
-    $(".bttn").on('click', function(ev){
-      console.log("entre");
-      console.log($(this));
-      ev.preventDefault();
-      $(this).toggleClass("bttn-focus");
-    })
+  SetRatingStar();
+  $(document).ready(function() {
 
-
-    $(function(){
-    $('[rel="popover"]').popover({
-        placement: "bottom",
-        container: 'body',
-        offset: '-170px',
-        html: true,
-        content: function () {
-            var clone = $($(this).data('popover-content')).clone(true).css('display', "block");
-            return clone;
-        }
-    }).click(function(e) {
-        e.preventDefault();
-
-        if(  $('.side-nav').hasClass("open")){
-
-          $('.side-nav').toggleClass("open");
-        }
-
-    });
-
-
-
-});
+  });
 
 
 

@@ -1120,81 +1120,107 @@ text-decoration: none;
 
 
 
+/* EStilo div popover*/
+.conta{
+  position: absolute;
+  top: 56px;
+  width: 100%;
+  /* top: 200px; */
+  background-color: #cad0d8!important;
+  z-index: 11;
+}
+.contaInter{
+  width: 20%;
+  height: 137px;
+  float:left;
+  color:#3b567e;
 
+}
+.bordeLeftsolid{
 
-
-
-
-
-
-
-.slider-box {
-  width: 30%;
-  margin: 25px auto
+  border-left-style:solid;
+}
+.star-rating {
+  text-align: center;
+  margin-top: 10%;
+  line-height:32px;
+  font-size:1.25em;
+  color:#3b567e;
 }
 
-.slider-box label,
-.slider-box input {
-  border: none;
-  display: inline-block;
-  vertical-align: top;
-  width: 30%;
- background: black;
-  color: brown;
+.star-rating .fa-star{color: #3b567e;}
+.form-group{
+  text-align: center;
+  margin-top: 10%;
+  color: #3b567e;
 }
-
-.slider-box input {
-  width: 70%
+.selectAge{
+  border-radius:10px!important;
+  width: 50%!important;
+  margin-left: 2%!important;
 }
-
-.slider-filter {
-  margin: 25px 0;
-  height: 14px;
-  border: 0;
-  background: #66c5c8;
-  border-radius: 14px;
+.price-range-slider {
+	width:100%;
+  text-align: center;
+  margin-top: 10%;
+  padding:10px 20px;
+  color: #3b567e;
 }
-.ui-slider-horizontal .ui-slider-handle {
-    width: 34px;
-    height: 34px;
-    left: -17px;
-    top: -10px;
-    -webkit-border-radius: 34px;
-    border-radius: 34px;
-    background: grey !important;
-    cursor: default;
-    -webkit-box-shadow: 1px 1px 2px rgba(0,0,0,.15);
-    box-shadow: 1px 1px 2px rgba(0,0,0,.15);
-    cursor: col-resize;
-}
-.ui-slider-horizontal .ui-slider-range {
-     background: green;
-  border-radius: 14px;
-}
+	.range-value {
+		margin:0;
+  }
+		input {
+			width:100%;
+			background:none;
+			color: #000;
+			font-size: 16px;
+			font-weight: initial;
+			box-shadow: none;
+			border: none;
+			margin: 20px 0 20px 0;
+		}
+  #amount{
+    margin-left: 30%;
+  }
 
+	.range-bar {
+		border: none;
+		background: #000;
+		height: 3px;
+		width: 100%;
+		margin-left: 8px;
+  }
+		.ui-slider-range {
+			background:#06b9c0;
+		}
 
-span.ui-slider-handle.ui-state-default.ui-corner-all:before, span.ui-slider-handle.ui-state-default.ui-corner-all:after {
-    content: "";
-    display: block;
-    position: absolute;
-    height: 12px;
-    width: 1px;
-    background: #e8e7e6;
-    left: 15px;
-    top: 11px;
-}
-span.ui-slider-handle.ui-state-default.ui-corner-all:after {left: 18px;}
-
-.keys-container{
-  justify-content: space-around;
-    display: flex;
-    font-family: "Noto Sans JP", sans-serif;
-    font-size: 15px;
-    color:  #1f3a62;
-}
-
-
-
+		.ui-slider-handle {
+			border:none;
+			border-radius:25px;
+			background:#3b567e!important;
+			border:2px solid #06b9c0;
+			height:17px;
+			width:17px;
+			top: -0.52em;
+			cursor:pointer;
+		}
+		.ui-slider-handle + span {
+			background:#3b567e!important;
+		}
+    input[type=checkbox]{
+      width: 10px;
+    }
+    .imgGarbage{
+      margin-top: 13%;
+      margin-left: 43%;
+    }
+    .checkbox-inline{
+      color: #3b567e;
+    }
+    .genres{
+      margin-left: 20%
+    }
+/*termina estiloe div popover*/
 
 
 
