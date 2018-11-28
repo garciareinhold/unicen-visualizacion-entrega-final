@@ -1112,7 +1112,11 @@ text-decoration: none;
 }
 
 
-
+.keys-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 
 
 
@@ -1169,7 +1173,7 @@ text-decoration: none;
 	.range-value {
 		margin:0;
   }
-		input {
+		.genres input {
 			width:100%;
 			background:none;
 			color: #000;
@@ -1207,7 +1211,7 @@ text-decoration: none;
 		.ui-slider-handle + span {
 			background:#3b567e!important;
 		}
-    input[type=checkbox]{
+    .genres input[type=checkbox]{
       width: 10px;
     }
     .imgGarbage{
